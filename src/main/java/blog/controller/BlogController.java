@@ -67,6 +67,21 @@ public class BlogController {
 
 	}
 	
+	
+	@GetMapping("/resultold")
+    public String resultold(
+    		@RequestParam(name="keyword", required=true/*, defaultValue="1"*/) String keyword,
+    		@RequestParam(name="page", required=false, defaultValue="1") int page,
+    		Model model) {
+		//String keyword =  request.getParameter("search");
+
+		model = blogService.updateModel(model, page,keyword);
+
+		
+		return "functionpage/resultpage-old";
+
+	}
+	
 
 	/***
 	 * Jump to the newblog page if no "title" is detected.
@@ -82,7 +97,7 @@ public class BlogController {
 
 		String name =  request.getParameter("name");
 		
-		if(name==null) return "functionpage/new"; 
+		if(name==null) return "functionpage/newblog"; 
 		
 		String category = request.getParameter("category");
 		blogService.insert(name,category);

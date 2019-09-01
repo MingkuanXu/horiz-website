@@ -166,6 +166,8 @@
 .information_page .btn{background:#ffc038; border-radius:3px; font-size:14px; color:#fff; padding:3px 6px;}
 </style>
 
+<body>
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -202,6 +204,7 @@
 <!-- Container (The Band Section) -->
 <div id="band" class="container text-center">
   <h3>活动列表</h3>
+
   <!-- <p><em>HackDuke 2018</em></p>  -->
   <br>
   <div class="row">
@@ -215,9 +218,11 @@
 
 
   </div>
+    <div class="information_page"></div>
+
 </div>
 
-<div class="information_page"></div>
+
 
 
 
@@ -277,13 +282,13 @@ $(document).ready(function(){
 				getPage([[${pageno}]],[[${totalpage}]]);
 			});
 
-			function getPage(pageIndex,totalPage){
+      function getPage(pageIndex,totalPage){
 				$(".information_page").createPage({    //创建分页
 					pageCount : totalPage,      //总页数
 					current : pageIndex,         //当前页
 					backFn : function(p) {    //p不用管
 						getPage(p,totalPage);         //点击页码或者跳转页码时的回掉函数，p为要跳转的页码
-						window.location="localhost:9999/home?page="+p;
+						window.location="http://localhost:9999/home?page="+p;
 					}
 				});
 			}

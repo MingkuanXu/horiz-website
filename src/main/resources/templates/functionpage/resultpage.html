@@ -1,225 +1,296 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
-
-
-  <head>
-
-    <!-- Meta Tag -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- SEO -->
-    <meta name="description" content="150 words">
-    <meta name="author" content="uipasta">
-    <meta name="url" content="http://www.yourdomainname.com">
-    <meta name="copyright" content="company name">
-    <meta name="robots" content="index,follow">
-
-
-    <title>DevBlog - Personal Blog Template</title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="images/favicon/apple-touch-icon.png">
-
-    <!-- All CSS Plugins -->
-    <link rel="stylesheet" type="text/css" href="css/plugin.css">
-
-    <!-- Main CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <!-- Google Web Fonts  -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
-
-
-    <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-	   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-
-  </head>
-  	<style>
-	/* 分页*/
-	.information_page{text-align:center; padding-top:30px;}
-	.information_page a{}
-	.information_page p{display:inline-block; font-size:14px; color:#999; border:1px solid #e3e3e3; padding:3px 8px;}
-	.information_page p.previous , .information_page p.next{background:#f6f6f6;}
-	.information_page p.current{font-weight:bold; color:#fff; background:#67bd54; border:1px solid #67bd54;}
-	.information_page input{width:25px; height:20px; border:1px solid #e3e3e3; margin:0 3px; padding:3px; text-align:center;}
-	.information_page .btn{background:#ffc038; border-radius:3px; font-size:14px; color:#fff; padding:3px 6px;}
-	</style>
-
- <body>
-
-
-
-	 <!-- Preloader Start -->
-     <div class="preloader">
-	   <div class="rounder"></div>
-      </div>
-      <!-- Preloader End -->
-
-
-
-
-    <div id="main">
-        <div class="container">
-            <div class="row">
-
-
-
-                 <!-- About Me (Left Sidebar) Start -->
-                 <div class="col-md-3">
-                   <div class="about-fixed">
-
-                     <div class="my-pic">
-                        <img src="images/pic/mypic-270x229.jpeg" alt="">
-                        <a href="javascript:void(0)" class="collapsed" data-target="#menu" data-toggle="collapse"><i class="icon-menu menu"></i></a>
-                         <div id="menu" class="collapse">
-                           <ul class="menu-link">
-                               <li><a href="about.html">About</a></li>
-                               <li><a href="work.html">Work</a></li>
-                               <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                         </div>
-                        </div>
-
-
-
-                      <div class="my-detail">
-
-                        <div class="white-spacing">
-                            <h1>Mingkuan Xu</h1>
-                            <span>Web Developer</span>
-                        </div>
-
-                       <ul class="social-icon">
-                         <li><a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                         <li><a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                         <li><a href="#" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                         <li><a href="#" target="_blank" class="github"><i class="fa fa-github"></i></a></li>
-                        </ul>
-
-                    </div>
-                  </div>
-                </div>
-                <!-- About Me (Left Sidebar) End -->
-
-
-
-
-
-                 <!-- Blog Post (Right Sidebar) Start -->
-                 <div class="col-md-9">
-                    <div class="col-md-12 page-body">
-                    	<div class="row">
-
-
-                            <div class="sub-title">
-                           		<h2>Search Result</h2>
-                                <a href="newblog"><i class="icon-envelope"></i></a>
-                             </div>
-
-
-                            <div class="col-md-12 content-page">
-
-
-                              <!-- Blog Post Start -->
-                              <div class="col-md-12 blog-post" th:each="vmap:${rlist}">
-                                  <div class="post-title">
-                                   <h1 th:text="${vmap.Name}"></h1></a>
-                                  </div>
-                                  <p th:text="${vmap.Category}"></p>
-                              </div>
-                              <!-- Blog Post End -->
-
-
-                                <div class="col-md-12 text-center" style="display:none;">
-                                 <a href="javascript:void(0)" id="load-more-post" class="load-more-button">Load</a>
-                                 <div id="post-end-message"></div>
-                                </div>
-
-                             </div>
-
-                         </div>
-
-
-
-					<div class="information_page"></div>
-
-
-
-                         </div>
-
-
-
-                       <!-- Footer Start -->
-                       <div class="col-md-12 page-body margin-top-50 footer">
-                          <footer>
-                          <ul class="menu-link">
-                               <li><a href="index.html">Home</a></li>
-                               <li><a href="about.html">About</a></li>
-                               <li><a href="work.html">Work</a></li>
-                               <li><a href="contact.html">Contact</a></li>
-                            </ul>
-
-                          <p>© Copyright 2016 DevBlog. All rights reserved</p>
-
-
-						  <!-- UiPasta Credit Start -->
-                          <div class="uipasta-credit">Design By <a href="http://www.uipasta.com" target="_blank">UiPasta</a></div>
-                          <!-- UiPasta Credit End -->
-
-
-                         </footer>
-                       </div>
-                       <!-- Footer End -->
-
-
-                  </div>
-                  <!-- Blog Post (Right Sidebar) End -->
-
-            </div>
-         </div>
-      </div>
-
-
-
-    <!-- Back to Top Start -->
-    <a href="#" class="scroll-to-top"><i class="fa fa-long-arrow-up"></i></a>
-
-    <!-- Back to Top End -->
-
-
-    <!-- All Javascript Plugins  -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/plugin.js"></script>
-    	<script src="js/page.js" type="text/javascript"></script>
-    			<script th:inline ="javascript" >
-			$(function(){
-				//初始化加载分页
-				getPage([[${pageno}]],[[${totalpage}]]);
-			});
-
-			function getPage(pageIndex,totalPage){
-				$(".information_page").createPage({    //创建分页
-					pageCount : totalPage,      //总页数
-					current : pageIndex,         //当前页
-					backFn : function(p) {    //p不用管
-						//getPage(p,totalPage);         //点击页码或者跳转页码时的回掉函数，p为要跳转的页码
-						window.location="localhost:9999/result?keyword="+[[${keyword}]]+"&page="+p;
-					}
-				});
-			}
-		</script>
-
-    <!-- Main Javascript File  -->
-    <script type="text/javascript" src="js/scripts.js"></script>
-
-
-   </body>
- </html>
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Horiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+      -webkit-filter: grayscale(90%);
+      filter: grayscale(90%); /* make all photos black and white */
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+  </style>
+</head>
+
+<style>
+/* 分页*/
+.information_page{text-align:center; padding-top:30px;}
+.information_page a{}
+.information_page p{display:inline-block; font-size:14px; color:#999; border:1px solid #e3e3e3; padding:3px 8px;}
+.information_page p.previous , .information_page p.next{background:#f6f6f6;}
+.information_page p.current{font-weight:bold; color:#fff; background:#67bd54; border:1px solid #67bd54;}
+.information_page input{width:25px; height:20px; border:1px solid #e3e3e3; margin:0 3px; padding:3px; text-align:center;}
+.information_page .btn{background:#ffc038; border-radius:3px; font-size:14px; color:#fff; padding:3px 6px;}
+</style>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">Horiz</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">HOME</a></li>
+        <li><a href="/search">SEARCH</a></li>
+        <li><a href="/home">ACTIVITY LIST</a></li>
+        <li><a href="/new">NEW</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="recipes.html">RECIPES
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="recipes.html">Breakfast</a></li>
+            <li><a href="recipes.html">Lunch</a></li>
+            <li><a href="recipes.html">Dinner</a></li>
+          </ul>
+        </li>
+        <!--<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h3>搜索结果</h3>
+  <!-- <p><em>HackDuke 2018</em></p>  -->
+  <br>
+  <div class="row">
+        <div class="col-sm-4" th:each="vmap:${rlist}">
+
+        <img th:src="${vmap.imgPath}" class="img-circle person" alt="Random Name" width="255" height="255">
+      <p class="text-center"><strong th:text="${vmap.Name}"></strong></p>
+        <p th:text="${vmap.Category}"></p>
+
+    </div>
+
+
+  </div>
+</div>
+
+<div class="information_page"></div>
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+<!-- All Javascript Plugins  -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plugin.js"></script>
+  <script src="js/page.js" type="text/javascript"></script>
+      <script th:inline ="javascript" >
+  $(function(){
+    //初始化加载分页
+    getPage([[${pageno}]],[[${totalpage}]]);
+  });
+
+  function getPage(pageIndex,totalPage){
+    $(".information_page").createPage({    //创建分页
+      pageCount : totalPage,      //总页数
+      current : pageIndex,         //当前页
+      backFn : function(p) {    //p不用管
+        //getPage(p,totalPage);         //点击页码或者跳转页码时的回掉函数，p为要跳转的页码
+        // window.location="http://localhost:9999/result?page="+p;
+        window.location="http://localhost:9999/result?keyword="+[[${keyword}]]+"&page="+p;
+      }
+    });
+  }
+</script>
+
+<!-- Main Javascript File  -->
+<script type="text/javascript" src="js/scripts.js"></script>
+
+
+</body>
+</html>

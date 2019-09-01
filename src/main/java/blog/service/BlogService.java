@@ -57,9 +57,16 @@ public class BlogService {
         
         List<Map<String, Object>> data = blogDao.findData(start,end,keyword);    		
         
+//        for(Map<String, Object> each:data) {
+//        		for(String key:each.keySet()) {
+//            		System.out.printf(key);
+//            		System.out.printf(String.valueOf(each.get(key)));
+//        		}
+//        }
+        
         model.addAttribute("pageno",page);
         model.addAttribute("totalpage", totalpage); 
-        model.addAttribute("deliver", data);
+        model.addAttribute("rlist", data);
         model.addAttribute("keyword", keyword);
         
         return model;
