@@ -11,6 +11,9 @@ import blog.dao.BlogDao;
 
 @Service
 public class BlogService {
+	
+	
+	private final int NUMBER_ACTIVITIES_EACH_PAGE = 6;
 
 	@Autowired
 	BlogDao blogDao;
@@ -23,10 +26,10 @@ public class BlogService {
 	 */
 	public Model updateModel(Model model, int page) {
 		
-		long totalpage = blogDao.calTotalRow()/4;
+		long totalpage = blogDao.calTotalRow()/NUMBER_ACTIVITIES_EACH_PAGE;
 		
-        int start = (page-1)*4;
-        int end = 4;
+        int start = (page-1)*NUMBER_ACTIVITIES_EACH_PAGE;
+        int end = NUMBER_ACTIVITIES_EACH_PAGE;
         
         List<Map<String, Object>> rlist = blogDao.findData(start,end);
         
@@ -47,10 +50,10 @@ public class BlogService {
 
 	public Model updateModel(Model model, int page, String keyword) {
 		
-		long totalpage = blogDao.calTotalRow(keyword)/4;
+		long totalpage = blogDao.calTotalRow(keyword)/NUMBER_ACTIVITIES_EACH_PAGE;
  
-        int start = (page-1)*4;
-        int end = 4;
+        int start = (page-1)*NUMBER_ACTIVITIES_EACH_PAGE;
+        int end = NUMBER_ACTIVITIES_EACH_PAGE;
         
         List<Map<String, Object>> data = blogDao.findData(start,end,keyword);    		
         
@@ -67,8 +70,8 @@ public class BlogService {
 	 * @param title
 	 * @param content
 	 */
-	public void insert(String title, String content) {
-		blogDao.insertToDatabase(title,content);
+	public void insert(String name, String category) {
+		blogDao.insertToDatabase(name,category);
 		
 	}
 }

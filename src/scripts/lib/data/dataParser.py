@@ -8,13 +8,19 @@ import mysql, mysql.connector # pylint: disable=import-error
 import chardet
 import tqdm
 
-hsFilePath = '../../../data/xlsxFiles/activities_HS.xlsx'
-cFilePath = '../../../data/xlsxFiles/activities_C.xlsx'
+currentDir = os.getcwd()
+dataDir = os.path.join(currentDir, "../../../main/resources/static")
+hsFilePath = os.path.join(dataDir, 'data/xlsxFiles/activities_HS.xlsx')
+cFilePath = os.path.join(dataDir, 'data/xlsxFiles/activities_C.xlsx')
 hsCatFilePath = '../hsAttributes.cat'
 cCatFilePath = '../cAttributes.cat'
-currentDir = os.getcwd()
-xmlDir = os.path.join(currentDir, '../../../data/xmlFiles')
-imgDir = os.path.join(currentDir, '../../../data/imgFiles')
+#xmlDir = os.path.join(currentDir, '../../../data/xmlFiles')
+
+xmlDir = os.path.join(dataDir, 'data/xmlFiles')
+#imgDir = os.path.join(currentDir, '../../../data/imgFiles')
+imgDir = os.path.join(dataDir, 'data/imgFiles')
+
+print(imgDir)
 
 def getAttr(catFilePath):
     with open(catFilePath, 'r') as f:
@@ -88,7 +94,7 @@ def toSql(filePath, tableName, catFilePath):
     horizDB = mysql.connector.connect(
         host="localhost",
         user="root",
-        passwd="",
+        passwd="12345.asdfg",
         port = "3306",
         charset="utf8"
         )
@@ -132,14 +138,15 @@ def toSql(filePath, tableName, catFilePath):
         insertQuery = "INSERT INTO {tableName} VALUES ({id}, {activityName}, '{xmlPath}', '{imgPath}'{valueStr})"
         valueStr = ", '{}'"*(len(activity[1]))
         valueStr = valueStr.format(*activity[1])
-        imgPath = os.path.join(os.path.join(imgDir, tableName), "{}-{}.jpg".format(tableName, Id))
+        relImgPath = "data/imgFiles/{}/{}-{}.jpg".format(tableName, tableName, Id)
         xmlPath = os.path.join(os.path.join(xmlDir, tableName), "{}-{}.xml".format(tableName, Id))
+        relXmlPath = "data/xmlFiles/{}/{}-{}.xml".format(tableName, tableName, Id)
         insertQuery = insertQuery.format(
             tableName = tableName,
             id = Id,
             activityName = "'{}'".format(activity[0]),
-            xmlPath = xmlPath,
-            imgPath = imgPath,
+            xmlPath = relXmlPath,
+            imgPath = relImgPath,
             valueStr = valueStr
         )
         try:

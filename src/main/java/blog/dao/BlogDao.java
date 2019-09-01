@@ -20,13 +20,13 @@ public class BlogDao {
 	 * @return
 	 */
 	public long calTotalRow() {
-        String query0 = "select count(*) as cnt from BlogCollection";
+        String query0 = "select count(*) as cnt from HSContest";
         Map<String, Object> totalrows = jdbcTemplate.queryForMap(query0);
 		return (long)totalrows.get("cnt");
 	}
 
 	public List<Map<String, Object>> findData(int start, int end) {
-        String query = String.format("select * from BlogCollection limit %d,%d",start,end);
+        String query = String.format("select * from HSContest limit %d,%d",start,end);
         return jdbcTemplate.queryForList(query);
 	}
 	
@@ -37,20 +37,20 @@ public class BlogDao {
 	 */
 
 	public long calTotalRow(String keyword) {
-		String query_totalrows = String.format("select count(*) as cnt from BlogCollection where (title like '%%%s%%') or (content like '%%%s%%') ",keyword,keyword);
+		String query_totalrows = String.format("select count(*) as cnt from HSContest where (name like '%%%s%%') or (category like '%%%s%%') ",keyword,keyword);
         Map<String, Object> totalrows = jdbcTemplate.queryForMap(query_totalrows);
         return (long) totalrows.get("cnt");
 
 	}
 
 	public List<Map<String, Object>> findData(int start, int end, String keyword) {
-        String query_data = String.format("select * from BlogCollection where (title like '%%%s%%') or (content like '%%%s%%') limit %d,%d ",keyword,keyword,start,end);
+        String query_data = String.format("select * from HSContest where (name like '%%%s%%') or (category like '%%%s%%') limit %d,%d ",keyword,keyword,start,end);
 		return jdbcTemplate.queryForList(query_data);
 	}
 
-	public void insertToDatabase(String title, String content) {
-        String query = "insert into BlogCollection(CreateDate,Title,Content) values(CURRENT_TIMESTAMP,?,?)";
-        jdbcTemplate.update(query, title,content);
+	public void insertToDatabase(String name, String category) {
+        String query = "insert into HSContest(Name,Category) values(?,?)";
+        jdbcTemplate.update(query, name,category);
 		
 	}
 

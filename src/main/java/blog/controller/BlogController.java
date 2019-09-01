@@ -33,6 +33,16 @@ public class BlogController {
         return "functionpage/homepage";
     }
 	
+	@GetMapping("/homeold")
+    public String oldmainpage(
+    		@RequestParam(name="page", required=false, defaultValue="1") int page, 
+    		Model model) {
+		
+		model = blogService.updateModel(model,page);
+        
+        return "functionpage/homepage-old";
+    }
+	
 
 	@GetMapping("/search")
 	public String searchEngine(@RequestParam(name="keyword", required=false, defaultValue = "") String keyword) throws UnsupportedEncodingException {
@@ -66,18 +76,18 @@ public class BlogController {
 	 * @throws ServletException
 	 * @throws IOException
 	 */
-	@GetMapping("/newblog")
+	@GetMapping("/new")
 	public String doPost(HttpServletRequest request) throws ServletException, IOException{
        
 
-		String title =  request.getParameter("title");
+		String name =  request.getParameter("name");
 		
-		if(title==null) return "functionpage/newblog"; 
+		if(name==null) return "functionpage/new"; 
 		
-		String content = request.getParameter("content");
-		blogService.insert(title,content);
+		String category = request.getParameter("category");
+		blogService.insert(name,category);
 
-		return "redirect:/";
+		return "redirect:/homepage";
 
 		
 	}
