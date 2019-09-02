@@ -50,7 +50,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         //  允许所有用户访问"/"和"/index.html"
         http.authorizeRequests()
-                .antMatchers("/", "/index","/webjars/**","/loginform/**").permitAll() //loginform 对应登陆界面配套的板式内容
+                .antMatchers("/", "/index","/webjars/**","/loginform/**","/css/**","/images/**").permitAll() //loginform 对应登陆界面配套的板式内容
                 .anyRequest().authenticated()   // 其他地址的访问均需验证权限
                 .and()
                 .formLogin()
