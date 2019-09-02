@@ -6,7 +6,7 @@ import pandas as pd # pylint: disable=import-error
 import xml.etree.ElementTree as ET
 import mysql, mysql.connector # pylint: disable=import-error
 import chardet
-import tqdm
+import tqdm # pylint: disable=import-error
 
 currentDir = os.getcwd()
 dataDir = os.path.join(currentDir, "../../../main/resources/static")
