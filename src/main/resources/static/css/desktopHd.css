@@ -1,0 +1,620 @@
+
+@font-face {
+                          font-family: "Apple-Chancery";
+                          src: url('../fonts/Apple Chancery.ttf') format("truetype");
+                        }
+                        
+.desktophd {
+  width               : 100%;
+  min-width           : 1440px;
+  height              : 100vh;
+  min-height          : 1024px;
+  position            : relative;
+  overflow            : hidden;
+  margin              : 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color    : rgba(255, 255, 255, 1.0);
+}
+a {
+  text-decoration     : none;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.desktophd .rectangle {
+  background-color    : rgba(78, 78, 78, 1.0);
+  top                 : 0px;
+  height              : 1024px;
+  width               : 1440px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .architecturecloudslighthouse2147459 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : -150px;
+  height              : 1209px;
+  width               : 1814px;
+  position            : absolute;
+  margin              : 0;
+  left                : -188px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .rectangle1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 950px;
+  width               : 1440px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .logoweb {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 18px;
+  height              : 45px;
+  width               : 45px;
+  position            : absolute;
+  margin              : 0;
+  left                : 28px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .logoweb .layer3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 45px;
+  width               : 45px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .logoweb .layer3 .group {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 4px;
+  height              : 40px;
+  width               : 37px;
+  position            : absolute;
+  margin              : 0;
+  left                : 6px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .logoweb .layer3 .group .path {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 8px;
+  height              : 32px;
+  width               : 22px;
+  position            : absolute;
+  margin              : 0;
+  left                : 8px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .logoweb .layer3 .group .path1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 1px;
+  height              : 6px;
+  width               : 6px;
+  position            : absolute;
+  margin              : 0;
+  left                : 13px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .logoweb .layer3 .group .path2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 6px;
+  width               : 3px;
+  position            : absolute;
+  margin              : 0;
+  left                : 17px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .logoweb .layer3 .group .path3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 25px;
+  height              : 0px;
+  width               : 14px;
+  position            : absolute;
+  margin              : 0;
+  left                : 22px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .logoweb .layer3 .group .path4 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 25px;
+  height              : 0px;
+  width               : 11px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .logoweb .layer3 .group .path5 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 6px;
+  height              : 15px;
+  width               : 11px;
+  position            : absolute;
+  margin              : 0;
+  left                : 21px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .logoweb .layer3 .group .path6 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 8px;
+  height              : 14px;
+  width               : 10px;
+  position            : absolute;
+  margin              : 0;
+  left                : 2px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .logoweb .layer3 .group .path7 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 5px;
+  height              : 4px;
+  width               : 5px;
+  position            : absolute;
+  margin              : 0;
+  left                : 23px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .logoweb .layer3 .group .path8 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 5px;
+  height              : 5px;
+  width               : 6px;
+  position            : absolute;
+  margin              : 0;
+  left                : 4px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .logoweb .layer3 .group .path9 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 26px;
+  height              : 0px;
+  width               : 7px;
+  position            : absolute;
+  margin              : 0;
+  left                : 23px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .logoweb .layer3 .group .path10 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 27px;
+  height              : 0px;
+  width               : 7px;
+  position            : absolute;
+  margin              : 0;
+  left                : 2px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .logoweb .layer3 .group .path11 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 27px;
+  height              : 0px;
+  width               : 2px;
+  position            : absolute;
+  margin              : 0;
+  left                : 23px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .logoweb .layer3 .group .path12 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 26px;
+  height              : 0px;
+  width               : 3px;
+  position            : absolute;
+  margin              : 0;
+  left                : 8px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .logoweb .layer3 .shape {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 44px;
+  width               : 45px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .mainTitle {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 213px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 333px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "STSongti-SC-Bold", Helvetica, Arial, serif;
+  font-size           : 50.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  letter-spacing      : 20.0px;
+  line-height         : 70.0px;
+}
+.desktophd .searchInput {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 319px;
+  height              : 50px;
+  width               : 770px;
+  position            : absolute;
+  margin              : 0;
+  left                : 334px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .searchInput .searchFrame {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 50px;
+  width               : 770px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .searchInput .searchFrame .base2type1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 50px;
+  width               : 770px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .searchInput .searchBar {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 9px;
+  height              : 30px;
+  width               : 176px;
+  position            : absolute;
+  margin              : 0;
+  left                : 58px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+
+.desktophd .searchInput .searchBar input {
+  font-size           : 16px;
+  color               : rgba(255, 255, 255, 1.0);
+  background          : rgba(0, 151, 19, 0); 
+  font-family         : "PingFangSC-Regular", Helvetica, Arial, serif;
+  border              : 0px solid #b0b0b0;
+  padding             : 3px 5px 4px;
+  height              : 24px;
+  width               : 680px;
+  -webkit-box-shadow  : none;
+  box-shadow          : none;
+  outline             : none;
+}
+
+.desktophd .searchInput .searchBar input::placeholder {
+  font-size           : 16px;
+  color               : rgba(255, 255, 255, 1.0);
+  background          : rgba(0, 151, 19, 0); 
+  font-family         : "PingFangSC-Regular", Helvetica, Arial, serif;
+}
+
+.desktophd .searchInput .search {
+  background-color    : rgba(71, 49, 49, 0);
+  top                 : 15px;
+  height              : 19px;
+  width               : 18px;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .searchInput .search .search1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 19px;
+  width               : 18px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .searchInput .search .search1 .oval {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 17px;
+  width               : 17px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .searchInput .search .search1 .rectangle3 {
+  background-color    : rgba(255, 255, 255, 1.0);
+  top                 : 16px;
+  height              : 1px;
+  width               : 7px;
+  position            : absolute;
+  margin              : 0;
+  left                : 12px;
+  border-radius       : 0px;
+  -ms-transform       : rotate(49deg); /* IE 9 */
+  -webkit-transform   : rotate(49deg); /* Chrome, Safari, Opera */
+  transform           : rotate(49deg);
+}
+.desktophd .rectangle2 {
+  background-color    : rgba(255, 255, 255, 1.0);
+  top                 : 950px;
+  height              : 733px;
+  width               : 1440px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.74;
+}
+.desktophd .u5b66u672fu80ccu666fu63d0u5347u4eceu8fd9u91ccu5f00u59cb {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 956px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 650px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "PingFangSC-Regular", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(108, 108, 108, 1.0);
+  text-align          : center;
+  letter-spacing      : 5.0px;
+  line-height         : 18.0px;
+}
+.desktophd .u5b66u672fu80ccu666fu63d0u5347u4eceu8fd9u91ccu5f00u59cb .span1 {
+  line-height         : 25.0px;
+}
+.desktophd .u5b66u672fu80ccu666fu63d0u5347u4eceu8fd9u91ccu5f00u59cb .span2 {
+  font-family         : "Helvetica", Helvetica, Arial, serif;
+  line-height         : 22.0px;
+}
+.desktophd .u5b66u672fu80ccu666fu63d0u5347u4eceu8fd9u91ccu5f00u59cb .span3 {
+  line-height         : 25.0px;
+}
+.desktophd .arrow {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 1012px;
+  height              : 10px;
+  width               : 20px;
+  position            : absolute;
+  margin              : 0;
+  left                : 702px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .arrow .arrow1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 10px;
+  width               : 20px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktophd .arrow .arrow1 .rectangle3 {
+  background-color    : rgba(255, 255, 255, 1.0);
+  top                 : -1px;
+  height              : 12px;
+  width               : 2px;
+  position            : absolute;
+  margin              : 0;
+  left                : 5px;
+  border-radius       : 1px;
+  -ms-transform       : rotate(-51deg); /* IE 9 */
+  -webkit-transform   : rotate(-51deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-51deg);
+}
+.desktophd .arrow .arrow1 .rectanglecopy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : -1px;
+  height              : 12px;
+  width               : 2px;
+  position            : absolute;
+  margin              : 0;
+  left                : 13px;
+  -ms-transform       : rotate(51deg); /* IE 9 */
+  -webkit-transform   : rotate(51deg); /* Chrome, Safari, Opera */
+  transform           : rotate(51deg);
+}
+.desktophd .signupOrLogin {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 34px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 1259px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "PingFangSC-Regular", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(108, 108, 108, 1.0);
+  text-align          : center;
+  letter-spacing      : 5.0px;
+  line-height         : 25.0px;
+}
+
+.desktophd .signupOrLogin a{
+  color               : rgba(108, 108, 108, 1.0);
+}
+
+.desktophd .cornerName {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 30px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 91px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "PingFangSC-Regular", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(152, 152, 152, 1.0);
+  text-align          : left;
+  letter-spacing      : 8.0px;
+  line-height         : 28.0px;
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay  : 0;
+  animation-delay     : 0;
+}
+@-webkit-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-moz-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-o-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
