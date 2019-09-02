@@ -6,7 +6,7 @@ import pandas as pd # pylint: disable=import-error
 import xml.etree.ElementTree as ET
 import mysql, mysql.connector # pylint: disable=import-error
 import chardet
-import tqdm
+import tqdm # pylint: disable=import-error
 
 hsFilePath = '../../../data/xlsxFiles/activities_HS.xlsx'
 cFilePath = '../../../data/xlsxFiles/activities_C.xlsx'
